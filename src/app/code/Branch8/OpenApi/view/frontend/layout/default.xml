@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Branch8_OpenApi::css/custom-bar.css"/>
+        <link src='Branch8_OpenApi::js/custom-bar.js' type='text/javascript'/>
+    </head>
+    <body>
+        <referenceContainer name="header.container">
+            <block class="Branch8\OpenApi\Block\Html\CustomBar" name="header.custom-bar" template="Branch8_OpenApi::html/custom-bar.phtml" before="-"/>
+        </referenceContainer>
+    </body>
+</page>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <branch8>
+            <openapi>
+                <enabled>1</enabled>
+                <api_url>https://api.coindesk.com/v1/bpi/currentprice.json</api_url>
+            </openapi>
+        </branch8>
+    </default>
+</config>

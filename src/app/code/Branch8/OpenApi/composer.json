@@ -1,0 +1,22 @@
+{
+    "name": "branch8/module-openapi",
+    "description": "OpenApi Module",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Trung Nguyen",
+            "email": "travisnguyenhoang@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Branch8\\CustomBar\\": ""
+        }
+    }
+}

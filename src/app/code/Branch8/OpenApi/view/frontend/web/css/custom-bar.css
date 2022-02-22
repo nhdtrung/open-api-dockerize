@@ -1,0 +1,32 @@
+/* Todo: use less instead of direct css file */
+#header-custom-bar {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+#header-custom-bar div {
+    display: inline-block;
+    padding: 0 10px
+}
+
+#header-custom-bar span {
+    color: green;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 767px) {
+    #header-custom-bar span {
+        width: 100%;
+        display: inline;
+    }
+}
+
+/* General classes */
+.hidden {
+    display: none !important;
+}

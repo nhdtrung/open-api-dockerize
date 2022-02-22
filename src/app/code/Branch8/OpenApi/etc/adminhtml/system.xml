@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="branch8" translate="label" sortOrder="999">
+            <label>branch8</label>
+        </tab>
+        <section id="branch8" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+            <label>Open Api</label>
+            <tab>branch8</tab>
+            <resource>Branch8_OpenApi::config_branch8_openapi</resource>
+            <group id="openapi" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                <label>OpenApi Configuration</label>
+                <field id="enabled" type="select" sortOrder="1" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                    <label>Enabled</label>
+                    <comment/>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                </field>
+                <field id="api_url" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Api Url</label>
+                    <comment>This text will display on the frontend.</comment>
+                    <frontend_model>Branch8\OpenApi\Block\System\Config\Form\Field\Disable</frontend_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

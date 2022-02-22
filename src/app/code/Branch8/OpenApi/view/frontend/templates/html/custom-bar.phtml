@@ -1,0 +1,18 @@
+<?php
+/** @var $block \Branch8\OpenApi\Block\Html\CustomBar */
+$result = $block->getPrice();
+$isEnable = $block->isModuleEnabled();
+$apiUrl = $block->getApiUrl();
+?>
+<?php if ($isEnable): ?>
+<div class="header" id="header-custom-bar">
+    <span class="hidden" id="api-url"><?= $apiUrl ?></span>
+    <?php foreach ($result['bpi'] as $res): ?>
+    <div>
+        <span><?= $res["code"] ?>:
+            <span class="<?= $res["code"] . '-val' ?>"><?= $res["rate"] ?></span> <?= $res["symbol"] ?>
+        </span>
+    </div>
+    <?php endforeach ?>
+    </div>
+<?php endif; ?>
