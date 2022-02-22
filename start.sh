@@ -36,6 +36,4 @@ docker-compose exec -w /var/www/src app bin/magento setup:install \
 --admin-lastname="User" \
 --language=en_US \
 --currency=USD \
---timezone=America/Chicago \
---elasticsearch-host=escontainer \
---elasticsearch-port=9200
+--timezone=America/Chicago 

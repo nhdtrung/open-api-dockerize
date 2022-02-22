@@ -35,7 +35,7 @@ RUN apt-get -y update \
     && docker-php-ext-install pdo_mysql mysqli mbstring zip exif pcntl \
     && docker-php-ext-install intl \
     && docker-php-ext-configure intl \
-    && docker-php-ext-configure gd --with-jpeg  \
+    && docker-php-ext-configure gd --with-jpeg --with-freetype \
     && docker-php-ext-install gd \
     && docker-php-ext-install bcmath \
     && docker-php-ext-install soap \
@@ -59,5 +59,5 @@ USER www
 EXPOSE 9000
 
 CMD /usr/bin/supervisord -n -c /etc/supervisor/supervisord.conf
-CMD ["php-fpm"]
+CMD ["php-fpm", "-R"]
 
