@@ -1,7 +1,13 @@
 ## How to power it on
 
-> `sh ./start.sh`
+> `bash ./start.sh`
 
-How to use Xdebug with PHPSTORM: 
+### How to use Xdebug with PHPSTORM: 
 
-- [Xdebug guide](./docs/xdebug/xdebug.md)
+[Xdebug guide](./docs/xdebug/xdebug.md)
+
+### Tested on: 
+
+✅   OSX/M1
+
+✅   OSX/x86
